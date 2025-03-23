@@ -1,6 +1,6 @@
 import App from "./App.vue";
-import { createApp } from "vue";
+import {createApp} from "vue";
 
-import "./main.css";
+import "./game/css/main.css";
 
 createApp(App).mount("#app");

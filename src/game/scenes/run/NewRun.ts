@@ -1,14 +1,15 @@
-import { Scene } from "phaser";
-import { EventBus } from "../../EventBus";
+import {Scene} from "phaser";
+import {EventBus} from "../../EventBus";
 
 export class NewRun extends Scene {
-  constructor() {
-    super("NewRun");
-  }
+    constructor() {
+        super("NewRun");
+    }
 
-  preload() {}
+    preload() {
+    }
 
-  create() {
-    EventBus.emit("current-scene-ready", this);
-  }
+    create() {
+        EventBus.emit("current-scene-ready", this);
+    }
 }

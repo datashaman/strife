@@ -1,14 +1,15 @@
-import { Scene } from "phaser";
-import { EventBus } from "../../EventBus";
+import {Scene} from "phaser";
+import {EventBus} from "../../EventBus";
 
 export class QuitGame extends Scene {
-  constructor() {
-    super("QuitGame");
-  }
+    constructor() {
+        super("QuitGame");
+    }
 
-  preload() {}
+    preload() {
+    }
 
-  create() {
-    EventBus.emit("current-scene-ready", this);
-  }
+    create() {
+        EventBus.emit("current-scene-ready", this);
+    }
 }
